@@ -1,5 +1,16 @@
-# Vue 3 + TypeScript + Vite
+# bdui-sandbox
+Этот проект позволяет протестировать bdui компоненты, позволяя вводить json код вручную и наблюдая за изменениями на экране.
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### Запуск проекта
+После клонирования проекта необходимо один раз установить зависимости. Для этого в корневой папке выполните
+```sh
+npm install
+```
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+Далее для запуска достаточно команды:
+```sh
+npm run dev
+```
+
+### Доступные компоненты
+Описание каждого компонента можно найти [здесь](https://github.com/lsdrfrx/lct-frontend/blob/master/components.md) (в другом репозитории).
