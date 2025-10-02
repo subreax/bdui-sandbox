@@ -1,0 +1,35 @@
+<template>
+  <div :class="background" :style>
+    <component :is="availableComponents[child.kind]" v-bind="child" />
+  </div>
+</template>
+
+<script setup lang="ts">
+import { reactive } from 'vue';
+import { layoutPropsToStyle, type LayoutProps } from './LayoutProps';
+import { availableComponents, type StatelessComponent } from '../ComponentBinding';
+
+export type BackgroundColor = 'default' | 'variant';
+
+interface Props extends LayoutProps {
+  body: StatelessComponent[], // single component - child
+  background: BackgroundColor
+}
+
+const props = defineProps<Props>();
+const child = props.body[0]!!;
+const style = reactive(layoutPropsToStyle(props));
+
+</script>
+
+<style scoped lang="scss">
+div {
+  &.default {
+    background-color: var(--color-bg-base);
+  }
+
+  &.variant {
+    background-color: var(--color-gray4);
+  }
+}
+</style>
