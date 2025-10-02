@@ -16,8 +16,8 @@ const props = defineProps<Props>();
 
 <style scoped>
 .screen {
-  margin: 32px;
+  /* margin: 32px;
   border: 2px solid #c2c2c2;
-  border-radius: 16px;
+  border-radius: 16px; */
 }
 </style>

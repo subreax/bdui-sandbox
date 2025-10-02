@@ -54,7 +54,7 @@ function updateScreen(layout: any) {
 <style scoped>
 .root-container {
   display: flex;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .screen { 
@@ -63,6 +63,6 @@ function updateScreen(layout: any) {
 
 .editor { 
   flex: 2;
-  height: 100vh;
+  overflow: hidden;
 }
 </style>
