@@ -1,6 +1,4 @@
-export const CartScreen = `
-
-{
+export const CartScreen = `{
   "states": {},
   "root": {
     "kind": "scaffold",

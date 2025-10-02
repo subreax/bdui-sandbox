@@ -51,6 +51,7 @@ function updateScreen(layout: any) {
 
 .screen { 
   flex: 1;
+  max-width: 400px;
 }
 
 .editor { 
