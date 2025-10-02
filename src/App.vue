@@ -7,17 +7,9 @@ import MobileScreen from './MobileScreen.vue';
 import CodeEditor from './CodeEditor.vue';
 import { ref } from 'vue';
 import { processScreen } from './core/ComponentBinding';
+import { CartScreen } from './CartScreen';
 
-const code = ref(`{
-  "root": {
-    "kind": "text",
-    "properties": {
-      "value": "hello world!"
-    }
-  },
-  "rnd": 0
-}`
-);
+const code = ref(CartScreen);
 
 let oldCode = code.value;
 
