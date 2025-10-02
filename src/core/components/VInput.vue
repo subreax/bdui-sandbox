@@ -10,8 +10,8 @@
 </template>
 
 <script setup lang="ts">
-import IconButton from './IconButton.vue';
-import CloseIcon from '../icons/CloseIcon.vue';
+/* import IconButton from './IconButton.vue';
+import CloseIcon from '../icons/CloseIcon.vue'; */
 
 interface Props {
   placeholder?: string,
@@ -25,9 +25,9 @@ const {
 
 const model = defineModel();
 
-function clearText() {
+/* function clearText() {
   model.value = null;
-}
+} */
 </script>
 
 <style scoped lang="scss">

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { availableComponents, type StatelessComponent } from './core/ComponentBinding';
+import { availableComponents, type ComponentKind } from './core/ComponentBinding';
 
 interface Props {
   screen: any
@@ -10,7 +10,7 @@ const props = defineProps<Props>();
 
 <template>
   <div class="screen">
-    <component :is="availableComponents[props.screen.root.kind]" v-bind="props.screen.root" />
+    <component :is="availableComponents[props.screen.root.kind as ComponentKind]" v-bind="props.screen.root" />
   </div>
 </template>
 

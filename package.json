@@ -19,11 +19,11 @@
     "@codemirror/view": "^6.38.4",
     "codemirror": "^6.0.2",
     "modern-normalize": "^3.0.1",
-    "sass-embedded": "^1.93.2",
-    "scss": "^0.2.4",
     "vue": "^3.5.22"
   },
   "devDependencies": {
+    "scss": "^0.2.4",
+    "sass-embedded": "^1.93.2",
     "@types/node": "^24.6.0",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.8.1",

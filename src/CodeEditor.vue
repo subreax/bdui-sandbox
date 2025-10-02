@@ -27,7 +27,7 @@ onMounted(() => {
     emit("update:modelValue", update.state.doc.toString());
   });
 
-  const view = new EditorView({
+  new EditorView({
     doc: props.modelValue,
     parent: containerRef.value!!,
     extensions: [
